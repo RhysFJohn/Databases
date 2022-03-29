@@ -8,10 +8,11 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/' do
-    'Bookmark Manager'
+    erb :home
   end
 
   get '/bookmarks' do
+    p ENV
     @bookmarks = Bookmark.all
     erb :'bookmarks/index'
   end
