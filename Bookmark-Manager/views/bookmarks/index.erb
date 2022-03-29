@@ -1,5 +1,12 @@
-<ul>
+<div align="center">
+<ul style="list-style-type: none">
   <% @bookmarks.each do |bookmark| %>
-    <li><%= bookmark %></li>
+    <li>
+      <a href="<%= bookmark.url %>"><%= bookmark.title %></a>
+    </li>
   <% end %>
 </ul>
+
+<h3 style="color: blue; text-decoration: none"><a href="/bookmarks/new">Create Bookmark</a></h3>
+
+</div>
