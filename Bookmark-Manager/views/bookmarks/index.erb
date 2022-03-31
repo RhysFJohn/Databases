@@ -1,15 +1,26 @@
-<div align="center">
-  <ul style="padding: 0; align: center;">
-    <% @bookmarks.each do |bookmark| %>
-      <li style="list-style-type: none;" class="bookmark" id="bookmark-<%= bookmark.id %>">
-        <a href="<%= bookmark.url %>"><%= bookmark.title %></a>
-        <form action="/bookmarks/<% bookmark.id %>" method="post">
-    <input type='hidden' name='_method' value='DELETE' />
-    <input type="submit" value="Delete" />
-  </form>
-      </li>
-    <% end %>
-  </ul>
+<!DOCTYPE html>
 
-  <h3 style="color: blue; text-decoration: none"><a href="/bookmarks/new">Create Bookmark</a></h3>
-</div>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/CSS/index.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <ul>
+        <% @bookmarks.each do |bookmark| %>
+          <li class="bookmark" id="bookmark-<%= bookmark.id %>">
+            <a href="<%= bookmark.url %>"><%= bookmark.title %></a>
+            <form action="/bookmarks/<% bookmark.id %>" method="post">
+              <input type='hidden' name='_method' value='DELETE' />
+              <input type="submit" value="Delete" />
+            </form>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="createContainer">
+      <h3><a class="createLink" href="/bookmarks/new">Create Bookmark</a></h3>
+    </div>
+  </body>
+</html>

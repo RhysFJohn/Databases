@@ -6,7 +6,7 @@
 > I would like to see a list of bookmarks
 
 > As a user
-> so I can store a bookark data for later retrieval
+> so I can store a bookm.ark data for later retrieval
 > I want to add a bookmark to Bookmark Manager
 <hr>
 

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgba(154, 154, 154, 0.5);
+  min-height: 100vh;
+  justify-items: center;
+  align-items: center;
+}
+
+.container{
+  margin: auto;
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', fantasy;
+}
+
+ul{
+  padding: 0; 
+}
+
+li{
+  list-style-type: none;
+}
+
+.bookmark{
+  font-family: 'Roboto', fantasy;
+  margin: 15px auto;
+  border: 2.5px;
+  border-style: solid;
+  border-radius: 25px;
+  width: 40%;
+  padding: 25px;
+}
+
+.bookmark a{
+  color: blue;
+  cursor: pointer;
+  margin: auto;
+  font-size: 1.25em;
+}
+
+.bookmark form{
+  float: right;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookmark form input{
+  border-radius: 5px;
+  font-size: 1.25em;
+  
+}
+
+.createContainer{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.createLink{
+  color: blue;
+  cursor: pointer;
+  font-family: 'Roboto', fantasy;
+  margin: auto;
+  border: 2.5px;
+  border-style: solid;
+  border-radius: 25px;
+  width: 40%;
+  padding: 5px 25px;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+.createLink:hover{
+  text-decoration: none;
+  background-color: azure;
+}
