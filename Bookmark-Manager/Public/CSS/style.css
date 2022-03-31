@@ -4,10 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', fantasy;
 }
 
 body{
-  background-color: rgba(154, 154, 154, 0.5);
+  background-image: linear-gradient(to bottom right, rgba(140, 20, 252, 1), rgba(255, 255, 255, 0));
   min-height: 100vh;
   justify-items: center;
   align-items: center;
@@ -22,7 +23,6 @@ body{
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  font-family: 'Roboto', fantasy;
 }
 
 .container{
@@ -36,7 +36,6 @@ body{
 .bookmarkLink{
   color: blue;
   cursor: pointer;
-  font-family: 'Roboto', fantasy;
   margin: auto;
   border: 2.5px;
   border-style: solid;

@@ -1,5 +1,27 @@
-<form action="/bookmarks" method="post">
-  <input type="text" name="url" placeholder="URL"/>
-  <input type="text" name="title" placeholder="Title"/>
-  <input type="submit" value="Submit" />
-</form>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/CSS/new.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="/bookmarks" method="post">
+        
+        <div class="url-container">
+          <label for="url">URL: </label>
+          <input type="text" name="url" placeholder="URL..."/>
+        </div>
+
+        <div class="title-container">
+          <label for="title">Title: </label>
+          <input type="text" name="title" placeholder="Title..."/>
+        </div>
+
+        <input type="submit" class="submitButton" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
+

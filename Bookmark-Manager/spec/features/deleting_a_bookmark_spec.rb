@@ -6,7 +6,7 @@ feature 'Deleting a bookmark' do
 
     first('.bookmark').click_button 'Delete'
 
-    expect(current_path).to eq '/bookmarks/'
+    expect(current_path).to eq '/bookmarks'
     expect(page).not_to have_link('Twitter', href: 'http://www.twitter.com')
   end
 end
